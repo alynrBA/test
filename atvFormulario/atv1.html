@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <p><a href=" ../index.html"><button>Home</button></a></p>
+
+    <h1> Formulário de Inscrição em Evento</h1>
+    <form>
+        <fieldset> 
+            <input type ='text' name="nome" size="50"
+                   required placeholder="Nome Completo"/><br>
+
+            <input type=" email" name="email" required
+                   placeholder="E-mail"/><br>
+
+            <label for="d1"> Feminino  </label>
+            <input type="radio" value="fm" name="disc"
+                id="d1">
+                 &nbsp;&nbsp;&nbsp;
+       
+            <label for="d2"> Masculino </label>
+            <input type="radio" value="mc" name="disc"
+                id="c2">
+                 &nbsp;&nbsp;&nbsp; <br>
+            
+            <input type="cargo" name="cargo" required
+                 placeholder="Cargo"/><br>
+
+            <input type="date" name="dtnasc" required>
+
+            <input type="tel" name="telefone" size="14"
+            placeholder="Telefone"/> <br>
+        </fieldset>
+
+        <fieldset>
+            <h2> Informações da Instituições</h2>
+            <h4> Preencha os campos abaixos com as informações da empresa em que trabalha.</h4>
+
+            <input type ='text' name="empresa" size="50"
+            required placeholder="Empresa:"/><br>
+
+            <input type ='text' name="endereço" size="50"
+            required placeholder="Endereço Completo:"/><br>
+
+            <input type ='text' name="cidade" size="50"
+            required placeholder="Cidade:"/><br>
+            
+            <label for="estado"> Estado</label><br>
+            <select name="estado">
+                <option value="RO" selected>Rondônia</option>
+                <option value="SP" selected>São Paulo</option>
+                <option value="MG" selected>Minas Gerais</option>
+                <option value="ES" selected>Espírito Santo</option>
+
+                <input type ='text' name="quantFuncionario" size="50"
+            required placeholder="Quant. Funcionário:"/><br>
+            
+            </select>
+            <hr> 
+            <label for="coment"> Observações</label><br>
+            <textarea id="coment" name="coment"
+                      cols="30" rows="6">
+        </textarea>
+        </fieldset>
+
+        <p> <span style="font-size: 14pt; "> Recibo: </span> <input id="Emitir em nome da Inscrição" type="checkbox" value="Emitir em nome da Inscrição"
+               name="Inscrição"> 
+        <label for="Emitir em nome da Inscrição">Emitir em nome da Inscrição</label> </p>
+
+        <br>
+        <input type="submit" value="Fazer Inscrição">
+    </br>
+      
+    </form>
+</body>
+</html>
